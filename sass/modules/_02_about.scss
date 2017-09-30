@@ -1,0 +1,58 @@
+
+.about {
+
+  &__container {
+    padding: 50px;
+    max-width: 1280px;
+    margin: 0 auto;
+
+    @media #{$mobile} {
+      padding: 50px 20px;
+      min-width: 480px;
+    }
+  }
+
+  &__content {
+    @media #{$wide} {
+      @include display-flex();
+    }
+  }
+
+  &__desc {
+    @media #{$wide} {
+      margin-right: 100px;
+    }
+  }
+
+  &__title {
+    @include font(400, normal, 30px, 36px, $default-font-family);
+    color: $color_riverBad;
+
+    @media #{$mobile} {
+      text-align: center;
+    }
+  }
+
+  &__text {
+    @include font(400, normal, 16px, 24px, $default-font-family);
+    color: #333333;
+
+    @media #{$mobile} {
+      max-width: 650px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__video {
+    display: block;
+    background-color: #445161;
+    width: 430px;
+    min-width: 430px;
+    height: 245px;
+
+    @media #{$mobile} {
+      margin: 0 auto;
+    }
+  }
+}

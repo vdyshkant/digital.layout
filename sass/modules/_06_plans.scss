@@ -1,0 +1,100 @@
+
+.plans__container {
+  padding: 50px;
+  max-width: 1280px;
+
+  margin: 0 auto;
+
+  @media #{$mobile} {
+    padding: 50px 20px;
+    min-width: 480px;
+    padding-bottom: 0;
+  }
+}
+
+.plans__title {
+  @include font(400, normal, 30px, 36px, $default-font-family);
+  color: $color_riverBad;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.plans__list {
+  @include display-flex();
+  align-items: flex-end;
+
+  @media #{$wide} {
+    @include justify-content(space-between);
+    -webkit-flex-flow: row wrap;
+    padding: 0 95px;
+  }
+
+
+  @media #{$mobile} {
+    -webkit-flex-flow: row wrap;
+    align-content: center;
+    justify-content: space-between;
+  }
+}
+
+.plans__item {
+  background-color: #445162;
+  width: 300px;
+  border-radius: $default-border-radius;
+  padding-bottom: 20px;
+
+  transition: 0.5s ease-out;
+
+  @media #{$mobile} {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+}
+
+.plan__title {
+  @include font(400, normal, 24px, 30px, $default-font-family);
+  color: #ffffff;
+  text-align: center;
+  height: 53px;
+  @include display-flex();
+  @include justify-content(center);
+  @include flex-direction(column);
+  text-align: center;
+}
+
+.plan__price {
+  @include font(400, normal, 40px, 30px, $default-font-family);
+  color: #445162;
+  text-align: center;
+  height: 67px;
+  margin: 0 2px;
+  background: #ffffff;
+  @include display-flex();
+  @include justify-content(center);
+  @include flex-direction(column);
+  text-align: center;
+}
+
+.plan__desc {
+  @include font(400, normal, 14px, 24px, $default-font-family);
+  color: #ffffff;
+}
+
+.plan__btn {
+  @include font(700, normal, 18px, 18px, $default-font-family);
+  color: #445161;
+  text-transform: uppercase;
+  width: 260px;
+  height: 40px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: $default-border-radius;
+  @include display-flex();
+  @include justify-content(center);
+  flex-direction: column;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none;
+}

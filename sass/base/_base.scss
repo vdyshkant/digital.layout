@@ -1,0 +1,51 @@
+
+@import "compass/utilities";
+@import "compass/css3";
+@import "compass/css3/text-shadow";
+@import "compass/css3/user-interface";
+
+$default-font-family    : Arial, Helvetica, sans-serif;
+$default-border-radius  : 6px;
+$color_riverBad         : #445161;
+
+$break-mobile: 480px;
+$break-wide: 1280px;
+$mobile: "only screen and (max-width: "$break-wide - 1")";
+$wide: "only screen and (min-width: "$break-wide")";
+
+
+* {
+    @include box-sizing(border-box);
+}
+
+html {
+    font-size: 16px;
+    line-height: 1;
+    height: 100%;
+    min-width: 480px;
+}
+
+body {
+    font-family: $default-font-family;
+    font-size: 16px;
+    line-height: 1;
+
+
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+
+@font-face {
+  font-family: 'Socialico';
+  src: url('fonts/Socialico.eot');
+  src: url('fonts/Socialico.woff2') format('woff2'),
+       url('fonts/Socialico.woff') format('woff'),
+       url('fonts/Socialico.ttf') format('truetype'),
+       url('fonts/Socialico.svg#Socialico') format('svg'),
+       url('fonts/Socialico.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
